@@ -1,0 +1,40 @@
+
+import math
+ 
+def sqr(x):
+    return x * x
+ 
+lst = [0, 0, 0, 1, 3, 3, 3, 4, 5, 5, 5, 7, 7, 7, 10, 10, 12, 15, 15, 18]
+ 
+number = len(lst)       
+print("number =%d"%number)
+ 
+print("Data...")
+i = 1
+for x in lst:
+    print("%5d:"%i + "  %f"%x)
+    i+=1
+
+print(lst)
+lst.sort()
+print(lst)
+ 
+sum = 0.0
+for x in lst:
+    sum += x
+mean = sum / number
+print("Mean = %f"%mean)
+
+ssum = 0.0
+for x in lst:
+    ssum += sqr(x - mean)
+var = ssum / number
+sd = math.sqrt(var)
+
+#variance is 
+print("Variance = %f"%var + "     sd = %f"%sd)
+
+print("Uvic")
+print(17600+723.50+685+485)
+
+
